@@ -246,6 +246,10 @@ export default () =>
         }),
         faviconUrl: Joi.any().default('/'),
         applicationTitle: Joi.any().default(''),
+        sideBarDescription: Joi.object({
+          dashboards: Joi.any().default('/'),
+          plugins: Joi.any().default('/'),
+        }),
       }),
     }).default(),
 
